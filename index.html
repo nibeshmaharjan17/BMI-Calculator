@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate BMI Pro</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calculator-card">
+        <header>
+            <h1>BMI<span>PRO</span></h1>
+            <p>Advanced Health Analytics</p>
+        </header>
+
+        <div class="input-section">
+            <div class="input-control">
+                <label>Weight</label>
+                <div class="input-wrapper">
+                    <input type="number" id="weight" placeholder="0">
+                    <select id="weight-unit">
+                        <option value="kg">kg</option>
+                        <option value="lb">lb</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="input-control">
+                <label>Height</label>
+                <div class="input-wrapper">
+                    <input type="number" id="height" placeholder="0">
+                    <select id="height-unit">
+                        <option value="cm">cm</option>
+                        <option value="m">m</option>
+                        <option value="in">in</option>
+                        <option value="ft">ft</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <button id="calc-btn">Calculate Score</button>
+
+        <div id="result-area" class="result-container hidden">
+            <div class="stats">
+                <span id="bmi-val">00.0</span>
+                <small id="bmi-category">Normal</small>
+            </div>
+            <div class="progress-track">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <p id="advice">Enter your metrics to see your health status.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
