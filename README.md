@@ -1,3 +1,7 @@
+## Live Link :
+
+https://nibeshmaharjan17.github.io/BMI-Calculator/
+
 # 🚀 BMI Pro | Advanced Health Analytics
 
 A modern, responsive, and aesthetic Body Mass Index (BMI) calculator built with pure Frontend technologies. This project focuses on high-quality UX/UI, precise unit conversion, and dynamic data visualization.
