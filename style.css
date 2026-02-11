@@ -94,3 +94,36 @@ button:hover { transform: scale(1.02); filter: brightness(1.1); }
 
 @keyframes slideUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .hidden { display: none; }
+
+.gender-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Hide the actual radio circle */
+.gender-selection input[type="radio"] {
+    display: none;
+}
+
+/* Style the label to look like a button */
+.gender-btn {
+    flex: 1;
+    padding: 12px;
+    background: #0f172a; /* Same as input bg */
+    border: 2px solid #334155;
+    border-radius: 12px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.3s;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+/* When the radio is checked, highlight the button */
+input[type="radio"]:checked + .gender-btn {
+    border-color: var(--accent);
+    background: rgba(56, 189, 248, 0.1);
+    color: var(--accent);
+    box-shadow: 0 0 10px rgba(56, 189, 248, 0.2);
+}
