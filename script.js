@@ -55,3 +55,21 @@ document.getElementById('calc-btn').addEventListener('click', () => {
     category.style.color = color;
     advice.innerText = msg;
 });
+
+// Add this inside your click event listener
+const gender = document.querySelector('input[name="gender"]:checked').value;
+
+// ... (keep your existing weight/height conversion logic) ...
+
+// Updated advice logic
+let msg = "";
+if (bmi < 18.5) {
+    msg = gender === "male" ? "Time to build some muscle, sir!" : "Focus on nutrient-dense meals, ma'am!";
+} else if (bmi <= 24.9) {
+    msg = "You're in peak condition. Keep it up!";
+} else {
+    msg = "Consider a balanced diet and regular exercise.";
+}
+
+// Update the advice text in the UI
+document.getElementById('advice').innerText = msg;
