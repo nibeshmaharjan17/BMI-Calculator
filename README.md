@@ -22,7 +22,4 @@ A modern, responsive, and aesthetic Body Mass Index (BMI) calculator built with 
 The application converts all user inputs into the metric system internally before applying the standard formula:
 $$BMI = \frac{mass(kg)}{height(m)^2}$$
 
-## 🚀 Installation & Usage
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/yourusername/bmi-pro-calculator.git](https://github.com/yourusername/bmi-pro-calculator.git)
+
